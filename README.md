@@ -103,7 +103,7 @@ for ERROR_RATE in error_rates:
             mps=perturbed_codeword_state,
             sites_to_bias="All",
             prob_bias_list=PROB_BIAS,
-            renormalise=True,
+            # renormalise=True,
         )
 
         try:
@@ -113,8 +113,8 @@ for ERROR_RATE in error_rates:
                 code_constraint_sites,
                 tensors,
                 chi_max=CHI_MAX,
-                renormalise=True,
-                result_to_explicit=False,
+                # renormalise=True,
+                # result_to_explicit=False,
                 strategy="Optimised",
                 silent=False,
             )
